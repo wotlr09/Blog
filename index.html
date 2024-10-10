@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>나의 블로그</h1>
+        <!-- 배너 광고 추가 -->
+        <div class="banner-ad">
+            <a href="https://example.com" target="_blank">
+                <img src="https://via.placeholder.com/728x90.png?text=배너+광고+여기에" alt="광고 배너">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="post-form">
+            <h2>새 글 작성</h2>
+            <form id="create-post" class="post-form">
+                <div class="form-group">
+                    <label for="author">작성자</label>
+                    <input type="text" id="author" placeholder="작성자 이름" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="content">내용</label>
+                    <textarea id="content" rows="4" placeholder="내용을 입력하세요..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="media">미디어 첨부</label>
+                    <input type="file" id="media" accept="image/*,video/*">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-button">게시하기</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="posts-section">
+            <h2>게시물</h2>
+            <div id="posts"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 나의 블로그. 모든 권리 보유.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
